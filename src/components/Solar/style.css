@@ -1,0 +1,44 @@
+div {
+  height: 10vh;
+  width: 10vh;
+}
+.sunEarth {
+  background-color: #333;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.matter {
+  border-radius: 50%;
+  display: inline-block;
+  height: 2vh;
+  margin: 0.5vh;
+  position: absolute;
+  width: 2vh;
+}
+.matter.earth {
+  background-color: blue;
+  right: 50%;
+}
+.matter.mars {
+  background-color: red;
+  right: 50%;
+}
+.matter.mercury {
+  background-color: lightcoral;
+  right: 50%;
+}
+.matter.moon {
+  background-color: #bbb;
+  height: 1vh;
+  right: 50%;
+  width: 1vh;
+}
+.matter.sun {
+  background-color: yellow;
+  right: 45vw;
+  top: 45vh;
+}
+.matter.venus {
+  background-color: salmon;
+  right: 50%;
+}

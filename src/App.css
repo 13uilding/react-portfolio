@@ -9,6 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    /* animation is defined with a keyframes, duration, time, and linear */
     animation: App-logo-spin infinite 20s linear;
   }
 }
