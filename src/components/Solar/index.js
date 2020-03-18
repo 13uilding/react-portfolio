@@ -6,7 +6,7 @@ const pi = 3.14;
 var time = 0;
 
 // Functions
-function determinePosition (time, radius, initPosArr=[45, 45]) {
+function determinePosition (time, radius, initPosArr=[50, 55]) {
   // The moon completes a rotation every minute
   let theta = pi / 2 + ((time * pi) / 30);
   let xPos = Math.round((initPosArr[0] + radius * Math.sin(theta) + Number.EPSILON) * 100) / 100;
@@ -21,8 +21,7 @@ function convertUnits ([xPos, yPos]) {
 // 	return [ xPos, yPos]
 // }
 // React Export
-export default function Solar() {
-
+export default function Solar(props) {
   // // Will run for 5 minutes
   // setTimeout(() => {
 	useEffect(() => {
@@ -32,15 +31,15 @@ export default function Solar() {
 			if (time >= 3000) {
 				clearTimeout(rotationInterval);
 			}
-			console.log(time);
-			let earthPos = determinePosition((time / 13), 35, [45, 45])
+			// console.log(time);
+			let earthPos = determinePosition((time / 13), 35, [50, 55])
 			setMatter({ 
 				...matter,
 				earth: convertUnits(earthPos),
-				mars: convertUnits(determinePosition((time / 24.5), 45, [45, 45])),
-				mercury: convertUnits(determinePosition((time / 3.1), 15, [45, 45])),
+				mars: convertUnits(determinePosition((time / 24.5), 40, [50, 55])),
+				mercury: convertUnits(determinePosition((time / 3.1), 15, [50, 55])),
 				moon: convertUnits(determinePosition(time, 5, earthPos)),
-				venus: convertUnits(determinePosition((time / 8), 25, [45, 45])),
+				venus: convertUnits(determinePosition((time / 8), 25, [50, 55])),
 			})
 		}, 20);
 	}, [])

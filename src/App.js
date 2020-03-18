@@ -1,31 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import CssBaseline from '@material-ui/core/CssBaseline';
+import logo from "./logo.svg";
 
-import Solar from './components/Solar';
-import './App.css';
+import Solar from "./components/Solar";
+import Header from "./components/Header";
 
+const theme = createMuiTheme({
+    palette: {
+      type: "dark",
+      primary: {
+        main: "#9c27b0"
+      },
+      secondary: {
+        main: "#ff1744"
+      }
+  }
+});
 function App() {
+  // const prefersDarkMode = useMedia
   return (
-    <div className="App">
-      <Solar></Solar>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route path="/solar">
+              <Solar></Solar>
+            </Route>
+          </Switch>
+        </Router>
+      </CssBaseline>
+    </MuiThemeProvider>
   );
 }
 
 export default App;
-
-
-{/* <header className="App-header">
-<img src={logo} className="App-logo" alt="logo" />
-<p>
-  Edit <code>src/App.js</code> and save to reload.
-</p>
-<a
-  className="App-link"
-  href="https://reactjs.org"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Learn React
-</a>
-</header> */}

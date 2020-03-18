@@ -1,12 +1,8 @@
-div {
-  height: 10vh;
-  width: 10vh;
-}
 .sunEarth {
-  background-color: #333;
   min-width: 100vw;
   min-height: 100vh;
 }
+/* Turn these into components */
 .matter {
   border-radius: 50%;
   display: inline-block;
@@ -35,8 +31,8 @@ div {
 }
 .matter.sun {
   background-color: yellow;
-  right: 45vw;
-  top: 45vh;
+  right: 50vw;
+  top: 55vh;
 }
 .matter.venus {
   background-color: salmon;
