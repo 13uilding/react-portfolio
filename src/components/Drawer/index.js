@@ -1,20 +1,29 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
+import { MemoryRouter as Router } from 'react-router';
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
+import Link from '@material-ui/core/Link';
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+// Icons
+import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import FunctionsIcon from "@material-ui/icons/Functions";
 import MailIcon from "@material-ui/icons/Mail";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+// My files
+
+// const LinkBehavior = React.forwardRef((props, ref) => (
+//   <RouterLink ref={ref} to="/getting-started/installation/" {...props} />
+// ));
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,10 +37,12 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2)
-  }
+  },
 }));
 
 export default function TemporaryDrawer() {
+
+
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false
@@ -69,7 +80,9 @@ export default function TemporaryDrawer() {
                 <AccountTreeIcon />
               )}
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <Link component={RouterLink} to={`/${text.toLowerCase()}`}>
+              <ListItemText primary={text} />
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -86,7 +99,9 @@ export default function TemporaryDrawer() {
                 <GitHubIcon />
               )}
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <Link component={RouterLink} to={`/${text.toLowerCase()}`}>
+              <ListItemText style={{fontWeight: 'strong'}} primary={text} />
+            </Link>
           </ListItem>
         ))}
       </List>

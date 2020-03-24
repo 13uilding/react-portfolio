@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,7 +19,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function Header(props) {
   const classes = useStyles();
-
+  let location = useLocation();
+  console.log(location);
 
 
   return (
@@ -27,7 +29,7 @@ export default function Header(props) {
         <Toolbar>
           <Drawer></Drawer>
           <Typography className={classes.title} variant="h6" noWrap>
-            {window.location.pathname.split("/").join(" ").toUpperCase()}
+            {location.pathname.split("/").join(" ").toUpperCase()}
           </Typography>
         </Toolbar>
       </AppBar>
