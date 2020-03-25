@@ -1,0 +1,74 @@
+[
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyMzQ4OTAyNTQ=",
+        "name": "EmployeeSummary",
+        "html_url": "https://github.com/13uilding/EmployeeSummary",
+        "description": "As a manager I want to generate a webpage that displays my team's basic info so that I have quick access to emails and GitHub profiles.",
+        "url": "https://api.github.com/repos/13uilding/EmployeeSummary",
+        "languages_url": "https://api.github.com/repos/13uilding/EmployeeSummary/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/EmployeeSummary/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/EmployeeSummary/deployments",
+        "created_at": "2020-01-19T11:40:17Z",
+        "updated_at": "2020-01-23T02:51:52Z"
+    },
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyMjk4MjY1NDA=",
+        "name": "HW6-WeatherAPI",
+        "html_url": "https://github.com/13uilding/HW6-WeatherAPI",
+        "description": null,
+        "url": "https://api.github.com/repos/13uilding/HW6-WeatherAPI",
+        "languages_url": "https://api.github.com/repos/13uilding/HW6-WeatherAPI/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/HW6-WeatherAPI/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/HW6-WeatherAPI/deployments",
+        "created_at": "2019-12-23T21:39:58Z",
+        "updated_at": "2020-01-14T00:29:31Z"
+    },
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyMzk2NzA0NzY=",
+        "name": "project-two",
+        "html_url": "https://github.com/13uilding/project-two",
+        "description": null,
+        "url": "https://api.github.com/repos/13uilding/project-two",
+        "languages_url": "https://api.github.com/repos/13uilding/project-two/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/project-two/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/project-two/deployments",
+        "created_at": "2020-02-11T03:49:40Z",
+        "updated_at": "2020-02-11T03:49:42Z"
+    },
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyNDgwNzY3Mjg=",
+        "name": "Project01",
+        "html_url": "https://github.com/13uilding/Project01",
+        "description": null,
+        "url": "https://api.github.com/repos/13uilding/Project01",
+        "languages_url": "https://api.github.com/repos/13uilding/Project01/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/Project01/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/Project01/deployments",
+        "created_at": "2020-03-17T21:29:08Z",
+        "updated_at": "2020-03-17T21:29:10Z"
+    },
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyNDY2NzE1NDM=",
+        "name": "project3",
+        "html_url": "https://github.com/13uilding/project3",
+        "description": null,
+        "url": "https://api.github.com/repos/13uilding/project3",
+        "languages_url": "https://api.github.com/repos/13uilding/project3/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/project3/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/project3/deployments",
+        "created_at": "2020-03-11T20:18:12Z",
+        "updated_at": "2020-03-15T15:37:38Z"
+    },
+    {
+        "node_id": "MDEwOlJlcG9zaXRvcnkyNDMzODExNDM=",
+        "name": "react-portfolio",
+        "html_url": "https://github.com/13uilding/react-portfolio",
+        "description": "My updated react portfolio to impress the masses, score with the lasses, and make a score passing fantastic homework app.",
+        "url": "https://api.github.com/repos/13uilding/react-portfolio",
+        "languages_url": "https://api.github.com/repos/13uilding/react-portfolio/languages",
+        "contributors_url": "https://api.github.com/repos/13uilding/react-portfolio/contributors",
+        "deployments_url": "https://api.github.com/repos/13uilding/react-portfolio/deployments",
+        "created_at": "2020-02-26T22:39:51Z",
+        "updated_at": "2020-03-24T22:50:33Z"
+    }
+]

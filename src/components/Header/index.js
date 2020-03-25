@@ -23,13 +23,14 @@ export default function Header(props) {
   console.log(location);
 
 
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <Drawer></Drawer>
           <Typography className={classes.title} variant="h6" noWrap>
-            {location.pathname.split("/").join(" ").toUpperCase()}
+            {location.pathname === "/" ? "WELCOME TO MY PORTFOLIO" : location.pathname.split("/").join(" ").toUpperCase()}
           </Typography>
         </Toolbar>
       </AppBar>
